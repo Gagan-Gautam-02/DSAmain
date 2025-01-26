@@ -1,6 +1,10 @@
 #include<iostream>
+using namespace std;
 
 int main(){
-    std::cout <<  "New Content";
-    return 0;
+   int x;
+   cin >> x;
+   cout << "hey" << x;
+   
+
 }
