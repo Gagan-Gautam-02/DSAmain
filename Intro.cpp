@@ -2,9 +2,9 @@
 #include<bits/stdc++.h>//contain all liberary functions
 using namespace std;
 
-int main(){
-   cout << "some text\n";
-   cout << "some text\n";
+// int main(){
+//    cout << "some text\n";
+//    cout << "some text\n";
    // std::cout << "some text\n";//std use to print without namespace;
    // int x,y;
    // cin >> x >> y;
@@ -90,12 +90,33 @@ int main(){
    // }
    // // cout << i << endl;
 
-   int i = 1;
-   while(i<=5){
-      cout << "some text" << endl;
-      i++;
+   // int i = 1;
+   // while(i<=5){
+   //    cout << "some text" << endl;
+   //    i++;
+   // } 
+
+   // functions
+
+   // void PrintName(){
+   //    cout << "some text";
+   // }
+
+   // int main(){
+   //    string name;
+   //    cin >> name;
+   //    PrintName();
+   //    return 0;
+   // }
+
+
+void PrintName(string name){
+      cout << "some text" << name << endl;
    }
 
-
-   return 0;
-}
+   int main(){
+      string name;
+      cin >> name;
+      PrintName(name);
+      return 0;
+   }
