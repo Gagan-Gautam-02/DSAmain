@@ -9,7 +9,7 @@ int main(){
    // int x,y;
    // cin >> x >> y;
    // cout << "value: " << x << "and " << y ;
-   int x = 10; // for taking long intrger use long;
+   //int x = 10; // for taking long intrger use long;
 
    // //float, double;
    // float a = 4.564;
@@ -91,5 +91,7 @@ int main(){
    // // cout << i << endl;
 
    
+
+
    return 0;
 }
