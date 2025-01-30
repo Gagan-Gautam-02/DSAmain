@@ -90,7 +90,11 @@ int main(){
    // }
    // // cout << i << endl;
 
-   
+   int i = 1;
+   while(i<=5){
+      cout << "some text" << endl;
+      i++;
+   }
 
 
    return 0;
