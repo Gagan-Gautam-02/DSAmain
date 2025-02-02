@@ -137,17 +137,50 @@ using namespace std;
 // }
 
 
-void something(int num){
-   cout << num << endl;
-   num += 10;
-   cout << num << endl;
-   num +=5;
-   cout << num << endl;
+// void something(int num){
+//    cout << num << endl;
+//    num += 10;
+//    cout << num << endl;
+//    num +=5;
+//    cout << num << endl;
+// }
+
+// int main(){
+//    int num = 10;
+//    something(num);
+//    cout << num;
+//    return 0;
+// }
+
+
+
+#include <istream>
+using namespace std;
+
+class shape{
+   public:
+   virtual void drew()=0;
+};
+class cirle: public shape{
+   void drew()override() {
+      cout << "draw circle";
+   }
+};
+class rectangle : public shape{
+   public:
+   void draw() override() {
+      cout << "draw rectangle";
+
 }
+};
 
 int main(){
-   int num = 10;
-   something(num);
-   cout << num;
+   shape*shape1 = new circle()
+   shape*shape2 = new rectangle();
+
+
+   delete shape1; 
+   delete shape2;
+
    return 0;
 }
