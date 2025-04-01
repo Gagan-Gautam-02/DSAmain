@@ -1,6 +1,6 @@
 // #include<iostream>
-#include<bits/stdc++.h>//contain all liberary functions
-using namespace std;
+// #include<bits/stdc++.h>//contain all liberary functions
+// using namespace std;
 
 // int main(){
 //    cout << "some text\n";
@@ -152,32 +152,34 @@ using namespace std;
 //    return 0;
 // }
 
-
-
-#include <istream>
+#include <iostream>
 using namespace std;
 
-class shape{
+class shape {
    public:
-   virtual void drew()=0;
+   virtual void draw() = 0; // Corrected method name
 };
-class cirle: public shape{
-   void drew()override() {
-      cout << "draw circle";
+
+class circle : public shape { // Fixed class name
+   public:
+   void draw() override { // Removed parentheses
+      cout << "draw circle" << endl; // Added endl for proper output formatting
    }
 };
-class rectangle : public shape{
-   public:
-   void draw() override() {
-      cout << "draw rectangle";
 
-}
+class rectangle : public shape {
+   public:
+   void draw() override { // Removed parentheses
+      cout << "draw rectangle" << endl; // Added endl for proper output formatting
+   }
 };
 
-int main(){
-   shape*shape1 = new circle()
-   shape*shape2 = new rectangle();
+int main() {
+   shape* shape1 = new circle(); // Added missing semicolon
+   shape* shape2 = new rectangle(); // Added missing semicolon
 
+   shape1->draw();
+   shape2->draw();
 
    delete shape1; 
    delete shape2;
