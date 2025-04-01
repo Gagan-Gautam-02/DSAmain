@@ -30,7 +30,7 @@ using namespace std;
 
 int main(){
     int a,b;
-    for(int i = 2; i<= a-1; i++){
-        
+    for(int i = 2; i<= a-1; i++){ 
+        if()
     }
 }
