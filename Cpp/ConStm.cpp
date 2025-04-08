@@ -29,8 +29,15 @@ using namespace std;
 
 
 int main(){
-    int a,b;
+    int a;
+    cin>>a;
     for(int i = 2; i<= a-1; i++){ 
-        if()
+        if( a%i == 0){
+            cout<<"not prime"<<endl;
+            break;
+        }else{
+            cout<<"prime"<<endl;
+            break;
+        }
     }
 }
