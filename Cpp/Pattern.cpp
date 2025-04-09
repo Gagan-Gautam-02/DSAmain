@@ -1,5 +1,5 @@
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
 // int  main(){
 //     int n;
@@ -90,3 +90,4 @@ using namespace std;
 //     }
 //     return 0;
 // }
+
