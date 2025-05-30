@@ -10,9 +10,9 @@ using namespace std;
 
 int main(){
      int n;
-<<<<<<< HEAD
-        // cout << "Enter a number: ";
-        // cin >> n;
+
+        cout << "Enter a number: ";
+        cin >> n;
         // for(int i = 0; i <= n; i++){
         //     for(int j = 0; j <= n-i; j++){
         //         cout << "*";
@@ -26,27 +26,23 @@ int main(){
         // }
         for(int c = 0; c <= n; c++){
             for(int d = 0; d <= n-c; d++){
+                cout << " ";
+            }
+            for(int e = 0; e <= 2*c; e++){
                 cout << "*";
             }
             cout << endl;
         }
-        for(int e = 0; e <= n; e++){
-            for(int f = 0; f <= e; f++){
+        for(int f = n; f >= 0; f--){
+            for(int g = 0; g <= n-f; g++){
+                cout << " ";
+            }
+            for(int h = 0; h <= 2*f; h++){
                 cout << "*";
             }
             cout << endl;
         }
-        return 0;
-}   
-=======
-        cout << "Enter a number: ";
-        cin >> n;
-        for(int i = 0; i <= n; i++){
-            for(int j = 0; j <= n-i; j++){
-                cout << "*";
-            }cout << endl;
-        }
-        
+      
+
         return 0;
 }
->>>>>>> 00f5bc62936c6fd7464cdd9a01133482916e8e7b
