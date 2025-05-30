@@ -10,6 +10,7 @@ using namespace std;
 
 int main(){
      int n;
+<<<<<<< HEAD
         // cout << "Enter a number: ";
         // cin >> n;
         // for(int i = 0; i <= n; i++){
@@ -37,3 +38,15 @@ int main(){
         }
         return 0;
 }   
+=======
+        cout << "Enter a number: ";
+        cin >> n;
+        for(int i = 0; i <= n; i++){
+            for(int j = 0; j <= n-i; j++){
+                cout << "*";
+            }cout << endl;
+        }
+        
+        return 0;
+}
+>>>>>>> 00f5bc62936c6fd7464cdd9a01133482916e8e7b
