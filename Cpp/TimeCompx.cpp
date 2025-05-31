@@ -43,10 +43,12 @@ int main(){
             cout << endl;
         }
       
-        for(int i = 0; i <=n; i++){
-            for(int j = n; j <= n-i; j--){
+        for(int i = 0; i<=n;i++){
+            for(int j = n; j >= i; j--){
                 cout << "*";
-            }cout << endl;
+
+            }
+            cout << endl;
         }
 
         return 0;
