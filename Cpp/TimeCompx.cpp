@@ -43,6 +43,11 @@ int main(){
             cout << endl;
         }
       
+        for(int i = 0; i <=n; i++){
+            for(int j = n; j <= n-i; j--){
+                cout << "*";
+            }cout << endl;
+        }
 
         return 0;
 }
