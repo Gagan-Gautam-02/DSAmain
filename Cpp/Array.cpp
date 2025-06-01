@@ -25,7 +25,9 @@ int main(){
     swap(x,y);
     cout<<x << " " << y << endl;
 
-    
-
+    //GCD function : // This function calculates the greatest common divisor of two numbers.
+    int o = 24, p = 36;
+    int gcd = __gcd(o, p);
+    cout << "GCD: " << gcd << endl;
 
 }
