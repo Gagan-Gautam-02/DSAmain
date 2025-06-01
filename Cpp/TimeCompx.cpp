@@ -51,5 +51,17 @@ int main(){
             cout << endl;
         }
 
+        for(int k = 0; k <= n; k++){
+            for(int l = 0; l <= n-k; l++){
+                cout<< "*";
+            }
+            for(int m = 0; m <=  k; m++){
+                cout << " ";
+            }
+            for(int o = 0; o <= n-k; o++){
+                cout << "*";
+            }
+        }cout << endl;
+
         return 0;
 }
