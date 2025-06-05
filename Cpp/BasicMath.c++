@@ -36,5 +36,23 @@ int main(){
     }else{
         cout << "false" << endl;
     }
+    //Armstrong number function : // This function checks if a number is an Armstrong number.
+    int num3 = 153;
+    int sum = 0;
+    int orgnum3 = num3; 
+    while(num3 > 0){
+        int digit = num3 % 10;
+        sum += digit * digit * digit;
+        num3 /= 10;
+    }
+    if(sum == orgnum3){
+        cout << "true" << endl;
+    }else{
+        cout << "false" << endl;
+    }
+
+
+
+
     return 0;
 }
