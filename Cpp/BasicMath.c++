@@ -51,8 +51,14 @@ int main(){
         cout << "false" << endl;
     }
 
-
-
-
+    //Devisors of num
+    int num4 = 28;
+    cout << "Divisors of " << num4 << ": ";
+    for(int i = 1; i<= num4; i++){
+        if(num4 % i == 0){
+            cout << i << " ";
+        }
+    }
+    
     return 0;
 }
