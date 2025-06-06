@@ -3,13 +3,25 @@
 #include<iostream>
 using namespace std;
 
-int print(){
-    cout<< "sometext"<<endl;
-    print();
+// int print(){
+//     cout<< "sometext"<<endl;
+//     print();
 
-};
+// };
 
-int main(){
-    print();
-    return 0;
-}
+// int main(){
+//     print();
+//     return 0;
+// }
+
+void walk(int steps);
+    int main(){
+        walk(5);
+        return 0;
+    }
+    
+    void walk(int steps){
+        for(int i = 0; i<steps; i++){
+            cout << "Step " << endl;
+        }
+    }
