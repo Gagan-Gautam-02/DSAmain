@@ -22,6 +22,10 @@ void walk(int steps);
     
     void walk(int steps){
         for(int i = 0; i<steps; i++){
+            if(i == steps - 1){
+                cout << "Reached the destination!" << endl;
+                return; // Base case: stop when the last step is reached
+            }
             cout << "Step " << endl;
         }
     }
