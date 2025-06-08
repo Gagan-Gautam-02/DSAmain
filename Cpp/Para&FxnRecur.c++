@@ -28,10 +28,14 @@ int numsum(int n,int m){
     }else if(m == 0){
         return n;
     }else{
-        return n + m;
+        return numsum(n - 1, m + 1);
     }
 
 }
+
+// How It Works (Conceptually):
+// We are adding 1 to n and subtracting 1 from m, so eventually m becomes 0, and n has increased m times.
+
 int main(){
     int n, m;
     cout << "Enter two numbers: ";
