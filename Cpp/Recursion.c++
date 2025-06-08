@@ -74,13 +74,13 @@ using namespace std;
 // }
 
 
-int digitSum(int n) {
-    if (n == 0) return 0;
-    return n % 10 + digitSum(n / 10);
-}
+// int digitSum(int n) {
+//     if (n == 0) return 0;
+//     return n % 10 + digitSum(n / 10);
+// }
 
-int main() {
-    int n = 1234;
-    cout << "Sum of digits of " << n << " is " << digitSum(n);
-    return 0;
-}
+// int main() {
+//     int n = 1234;
+//     cout << "Sum of digits of " << n << " is " << digitSum(n);
+//     return 0;
+// }
