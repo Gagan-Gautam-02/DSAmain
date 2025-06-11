@@ -65,31 +65,58 @@ using namespace std;
 
 //reverse an array using recursion
 
-void reversearray(int arr[],int start, int end){
-    if(start >= end){
-        return;
-    }
-    swap(arr[start], arr[end]);
-    reversearray(arr, start + 1, end - 1);
-}
+// ✔ Recursive Approach – The function recursively swaps elements from both ends until fully reversed.
+// ✔ In-Place Reversal – No extra memory is used; only swaps within the original array.
+// ✔ Base Condition Stops Recursion – When start >= end, the process stops.
 
-int main(){
-    int arr[] = {1, 2, 3, 4, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
+// void reversearray(int arr[],int start, int end){
+//     if(start >= end){
+//         return;
+//     }
+//     swap(arr[start], arr[end]);
+//     reversearray(arr, start + 1, end - 1);
+// }
+
+// int main(){
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int n = sizeof(arr) / sizeof(arr[0]);
     
-    cout << "Original array: ";
-    for(int i = 0; i < n; i++){
-        cout << arr[i] << " ";
+//     cout << "Original array: ";
+//     for(int i = 0; i < n; i++){
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+
+//     reversearray(arr, 0, n - 1);
+
+//     cout << "Reversed array: ";
+//     for(int i = 0; i < n; i++){
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
+
+
+//checking string is palindrome or not using recursion
+
+bool ispal(string s, int start, int end){
+    if(start>=end){
+        return true;
+    }else if(start < end && s[start] == s[end]){
+        return ispal(s,start+1,end-1);
     }
-    cout << endl;
-
-    reversearray(arr, 0, n - 1);
-
-    cout << "Reversed array: ";
-    for(int i = 0; i < n; i++){
-        cout << arr[i] << " ";
+}
+int main(){
+    string s;
+    cout << "Enter a string: ";
+    cin >>s;
+    int n = s.length();
+    if(ispal(s, 0, n - 1)){
+        cout << "The string is a palindrome." << endl;
+    }else{
+        cout << "The string is not a palindrome." << endl;
     }
-    cout << endl;
-
     return 0;
 }
