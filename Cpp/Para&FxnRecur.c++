@@ -123,22 +123,22 @@ using namespace std;
 
 //multiple recursion calls
 // This function calculates the nth Fibonacci number using recursion.
-int fibonacci(int n) {
-    if (n <= 1) {
-        return n; // Base case: return n if it's 0 or 1
-    }
-    return fibonacci(n - 1) + fibonacci(n - 2); // Recursive calls
-}
-int main() {
-    int n;
-    cout << "Enter a number to find its Fibonacci value: ";
-    cin >> n;
+// int fibonacci(int n) {
+//     if (n <= 1) {
+//         return n; // Base case: return n if it's 0 or 1
+//     }
+//     return fibonacci(n - 1) + fibonacci(n - 2); // Recursive calls
+// }
+// int main() {
+//     int n;
+//     cout << "Enter a number to find its Fibonacci value: ";
+//     cin >> n;
     
-    if (n < 0) {
-        cout << "Fibonacci is not defined for negative numbers." << endl;
-    } else {
-        cout << "Fibonacci(" << n << ") = " << fibonacci(n) << endl;
-    }
+//     if (n < 0) {
+//         cout << "Fibonacci is not defined for negative numbers." << endl;
+//     } else {
+//         cout << "Fibonacci(" << n << ") = " << fibonacci(n) << endl;
+//     }
     
-    return 0;
-}
+//     return 0;
+// }
