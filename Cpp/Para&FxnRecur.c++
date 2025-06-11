@@ -123,6 +123,11 @@ using namespace std;
 
 //multiple recursion calls
 // This function calculates the nth Fibonacci number using recursion.
+//logic:
+// The Fibonacci sequence is defined as follows:
+// F(0) = 0
+// F(1) = 1
+// F(n) = F(n-1) + F(n-2) for n > 1
 // int fibonacci(int n) {
 //     if (n <= 1) {
 //         return n; // Base case: return n if it's 0 or 1
