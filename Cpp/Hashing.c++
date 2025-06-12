@@ -5,7 +5,6 @@ using namespace std;
 
 void hashFunction(int arr[], int size) {
     for (int i = 0; i < size; i++) {
-        // Simple hash function: using modulo operator
         int hashIndex = arr[i] % size;
         cout << "Element: " << arr[i] << " -> Hash Index: " << hashIndex << endl;
     }
