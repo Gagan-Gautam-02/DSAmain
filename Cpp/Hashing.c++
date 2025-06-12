@@ -9,19 +9,31 @@
 #include <iostream>
 using namespace std;
 
-void hashFunction(int arr[], int size) {
-    for (int i = 0; i < size; i++) {
-        int hashIndex = arr[i] % size;
-        cout << "Element: " << arr[i] << " -> Hash Index: " << hashIndex << endl;
-    }
+// void hashFunction(int arr[], int size) {
+//     for (int i = 0; i < size; i++) {
+//         int hashIndex = arr[i] % size;
+//         cout << "Element: " << arr[i] << " -> Hash Index: " << hashIndex << endl;
+//     }
+// }
+
+// int main() {
+//     int arr[] = {10, 20, 30, 40, 50};
+//     int size = sizeof(arr) / sizeof(arr[0]);
+
+//     cout << "Hashing the array elements:" << endl;
+//     hashFunction(arr, size);
+
+//     return 0;
+// }
+
+
+//1. Simple Hash Function for Integers
+
+int simpleHash(int key){
+    return key%10;
 }
-
-int main() {
-    int arr[] = {10, 20, 30, 40, 50};
-    int size = sizeof(arr) / sizeof(arr[0]);
-
-    cout << "Hashing the array elements:" << endl;
-    hashFunction(arr, size);
-
+int main(){
+    int key = 25;
+    cout << "Hash value for " << key << " is: " << simpleHash(key) << endl;
     return 0;
 }
