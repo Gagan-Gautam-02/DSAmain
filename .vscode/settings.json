@@ -1,4 +1,7 @@
 {
     "editor.acceptSuggestionOnEnter": "on",
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "files.associations": {
+        "unordered_map": "cpp"
+    }
 }
