@@ -41,15 +41,39 @@ using namespace std;
 
 // 2. Using unordered_map for Fast Lookup
 
-int main(){
-    unordered_map<string, int> hashMap;
-    hashMap["some01"]= 1;
-    hashMap["some02"]= 2;
-    hashMap["some03"]= 3;
+// int main(){
+//     unordered_map<string, int> hashMap;
+//     hashMap["some01"]= 1;
+//     hashMap["some02"]= 2;
+//     hashMap["some03"]= 3;
 
-    cout << "Hash Map Contents:" << hashMap["some01"] << endl;
-    cout << "Hash Map Contents:" << hashMap["some02"] << endl;
-    cout << "Hash Map Contents:" << hashMap["some03"] << endl;
-    return 0;
+//     cout << "Hash Map Contents:" << hashMap["some01"] << endl;
+//     cout << "Hash Map Contents:" << hashMap["some02"] << endl;
+//     cout << "Hash Map Contents:" << hashMap["some03"] << endl;
+//     return 0;
     
+// }
+
+
+//finding common elements in two arrays
+
+void findCoElm(int arr1[], int arr2[]){
+    unordered_map<int,int> hashMap;
+    for(int i = 0; i<5; i++){
+        hashMap[arr1[i]]++;
+    }
+    for(int i = 0; i<5; i++){
+        if(hashMap[arr2[i]] > 0){
+            cout << "Common Element: " << arr2[i] << endl;
+            hashMap[arr2[i]] = 0; // To avoid duplicates
+        }
+    }
+int main() {
+    int arr1[] = {1, 2, 3, 4, 5};
+    int arr2[] = {4, 5, 6, 7, 8};
+
+    findCoElm(arr1, arr2);
+
+    return 0;
+}
 }
