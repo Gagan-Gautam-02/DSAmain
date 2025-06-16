@@ -57,25 +57,28 @@ using namespace std;
 
 //finding common elements in two arrays
 
-void findCoElm(int arr1[], int arr2[]){
-    unordered_map<int,int> hashMap;
-    for(int i = 0; i<5; i++){
+
+void findCoElm(int arr1[], int arr2[]) {
+    unordered_map<int, int> hashMap;
+
+    for (int i = 0; i < 5; i++) {
         hashMap[arr1[i]]++;
     }
-    for(int i = 0; i<5; i++){
-        if(hashMap[arr2[i]] > 0){
-            cout << "Common Element: " << arr2[i] << endl;
-            hashMap[arr2[i]] = 0; // To avoid duplicates
+
+    for (int i = 0; i < 5; i++) {
+        if (hashMap[arr2[i]] > 0) {
+            cout << "Common Element:  " << arr2[i] << endl;
+            hashMap[arr2[i]] = 0; 
         }
     }
+}
+
 int main() {
     int arr1[] = {1, 2, 3, 4, 5};
     int arr2[] = {4, 5, 6, 7, 8};
 
     findCoElm(arr1, arr2);
 
+
     return 0;
 }
-}
-}
-
