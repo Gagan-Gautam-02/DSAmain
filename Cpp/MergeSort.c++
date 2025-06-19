@@ -19,12 +19,25 @@ void merge(int array[], int low, int middle, int high) {
     int right = middle + 1;
     int temp[high - low + 1];
     int i = 0;
+
     while (left <= middle && right <= high) {
         if (array[left] <= array[right]) {
             temp[i++] = array[left++];
         } else {
             temp[i++] = array[right++];
         }
+    }
+
+    while (left <= middle) {
+        temp[i++] = array[left++];
+    }
+
+    while (right <= high) {
+        temp[i++] = array[right++];
+    }
+
+    for (int j = 0; j < i; j++) {
+        array[low + j] = temp[j];
     }
 }
 
