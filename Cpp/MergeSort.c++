@@ -3,17 +3,6 @@
 using namespace std;
 
 
-void MergeSort(int array[],int low,int high){
-    int middle;
-    if (low >= high) {
-        return;
-    }
-    middle = (low + high) / 2;
-    MergeSort(array, low, middle);
-    MergeSort(array, middle + 1, high);
-    merge(array, low, middle, high);
-} 
-
 void merge(int array[], int low, int middle, int high) {
     int left = low;
     int right = middle + 1;
@@ -40,6 +29,18 @@ void merge(int array[], int low, int middle, int high) {
         array[low + j] = temp[j];
     }
 }
+
+
+void MergeSort(int array[],int low,int high){
+    int middle;
+    if (low >= high) {
+        return;
+    }
+    middle = (low + high) / 2;
+    MergeSort(array, low, middle);
+    MergeSort(array, middle + 1, high);
+    merge(array, low, middle, high);
+} 
 
 
 int main(){
