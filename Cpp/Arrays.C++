@@ -94,7 +94,7 @@ void findLargestAndSecondLargest(int arr[], int size) {
     }
 
     int largest = arr[0];
-    int secondLargest = INT_MIN;
+    int secondLargest = INT_MIN; 
 
     for (int i = 1; i < size; i++) {
         if (arr[i] > largest) {
@@ -135,4 +135,8 @@ int main() {
 
     delete[] arr; // Free dynamically allocated memory
     return 0;
+}
+
+void newfxn(){
+    
 }
