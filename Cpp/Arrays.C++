@@ -72,14 +72,14 @@ using namespace std;
 
 // };
 
-// int main() {
-//     IntArray myArray;
-//     myArray.ReadSize();
-//     myArray.ReadElements();
-//     myArray.Print();
-//     myArray.LargestElem();
-//     return 0;
-// }
+int main() {
+    IntArray myArray;
+    myArray.ReadSize();
+    myArray.ReadElements();
+    myArray.Print();
+    myArray.LargestElem();
+    return 0;
+}
 
 
 
