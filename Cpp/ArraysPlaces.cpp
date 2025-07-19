@@ -11,11 +11,11 @@ using namespace std;
 //     }
 //     cout << endl;
 
-    cout << "Array elements using array notation: ";
-    for (int i = 0; i < 5; i++) {
-        cout << arr[i] << " "; // Accessing elements using array notation
-    }
-    cout << endl;
+//     cout << "Array elements using array notation: ";
+//     for (int i = 0; i < 5; i++) {
+//         cout << arr[i] << " "; // Accessing elements using array notation
+//     }
+//     cout << endl;
 
-    return 0;
-}
+//     return 0;
+// }
