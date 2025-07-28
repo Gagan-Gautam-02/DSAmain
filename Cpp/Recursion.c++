@@ -109,3 +109,27 @@ using namespace std;
 //     cout << "Factorial of " << num << " is: " << factorial(num) << endl;
 //     return 0;
 // }
+
+int SumArray(int arr[], int n){
+    if(n<=0){
+        return 0;
+    }else{
+        return arr[n-1]+ SumArray(arr, n-1);
+    }
+}
+int main(){
+    int arr[5];
+    cout << "Enter elem";
+    for(int i = 0; i<5; i++){
+        cin>>arr[i];
+    }
+    int size= sizeof(arr)/sizeof(arr[0]);
+    cout << "Sum of array elements: " << SumArray(arr, size) << endl;
+    return 0;
+
+// - sizeof(arr) gives the total memory size of the array (in bytes).
+// - sizeof(arr[0]) gives the size of one element (in this case, an int).
+// - So, dividing these gives the count: 5 in this example.
+}
+
+
