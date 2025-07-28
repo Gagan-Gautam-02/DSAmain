@@ -82,4 +82,28 @@ using namespace std;
 // }
 
 
+//reverse array
 
+void reverseArray(int arr[], int n){
+    int start = 0;
+    int end = n -1; //end index is n-1 because array index starts from 0 and ends at n-1
+    for(int i = 0; i<n/2; i++){ //i<n/2 because we only need to swap the first half with the second half
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+
+    }
+
+}
+
+int main(){
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr)/sizeof(arr[0]); //size of array
+    reverseArray(arr, n);
+    cout << "Reversed array: "; 
+    for (int i = 0; i < n; i++){
+        cout << arr[i]<< " ";
+    }
+
+    return 0;
+}
