@@ -2,7 +2,8 @@
 #include<algorithm>
 using namespace std;
 
-
+//Merge sorting algorithm: it is a divide-and-conquer algorithm that sorts an array by recursively dividing it into two halves, sorting each half, and then merging the sorted halves back together.
+//Time complexity: O(n log n) in all cases (best, average, and worst
 void merge(int array[], int low, int middle, int high) {
     int left = low;
     int right = middle + 1;
