@@ -161,3 +161,33 @@ using namespace std;
 
 //rotate array by k places
 
+void RotArr(int arr[], int temp,int n){
+    temp = arr[0];
+    for(int i = 0; i<n; i++){
+        arr[i-1]=arr[i];
+    }
+    arr[n-1]= temp;
+    return arr;
+}
+
+int main(){
+    int arr[]={1, 2, 3, 4, 5};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int temp = 0;
+    int n = 5; //size of array
+    int k = 2; //number of places to rotate
+    for(int i = 0; i < k; i++){
+        RotArr(arr, temp, n);
+    }
+}
+
+// class Solution {
+// public:
+//     void rotate(vector<int>& nums, int k) {
+//         int n = nums.size();
+//         k = k % n;  // Handle cases where k > n
+//         reverse(nums.begin(), nums.end());             // Reverse entire array
+//         reverse(nums.begin(), nums.begin() + k);       // Reverse first k elements
+//         reverse(nums.begin() + k, nums.end());         // Reverse remaining elements
+//     }
+// };
