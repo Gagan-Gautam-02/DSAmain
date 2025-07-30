@@ -138,3 +138,26 @@ using namespace std;
 //     }
 // }
 
+//largest element in an array 
+
+// void LargestElem(int arr[],int n){
+//     int largest = arr[0];
+//     for(int i = 0; i <n; i++){
+//         if(arr[i]>largest){
+//             largest = arr[i];
+//         }
+//     }
+//     cout << "Largest"<< largest << endl;
+// }
+
+// int main(){
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int n = sizeof(arr)/sizeof(arr[0]); //size of array
+//     LargestElem(arr, n);
+//     return 0;
+// }
+ 
+//second largest element in an array
+
+//rotate array by k places
+
