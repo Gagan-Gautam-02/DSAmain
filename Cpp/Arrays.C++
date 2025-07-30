@@ -161,25 +161,25 @@ using namespace std;
 
 //rotate array by k places
 
-void RotArr(int arr[], int temp,int n){
-    temp = arr[0];
-    for(int i = 0; i<n; i++){
-        arr[i-1]=arr[i];
-    }
-    arr[n-1]= temp;
-    return arr;
-}
+// void RotArr(int arr[], int temp,int n){
+//     temp = arr[0];
+//     for(int i = 0; i<n; i++){
+//         arr[i-1]=arr[i];
+//     }
+//     arr[n-1]= temp;
+//     return arr;
+// }
 
-int main(){
-    int arr[]={1, 2, 3, 4, 5};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    int temp = 0;
-    int n = 5; //size of array
-    int k = 2; //number of places to rotate
-    for(int i = 0; i < k; i++){
-        RotArr(arr, temp, n);
-    }
-}
+// int main(){
+//     int arr[]={1, 2, 3, 4, 5};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     int temp = 0;
+//     int n = 5; //size of array
+//     int k = 2; //number of places to rotate
+//     for(int i = 0; i < k; i++){
+//         RotArr(arr, temp, n);
+//     }
+// }
 
 // class Solution {
 // public:
