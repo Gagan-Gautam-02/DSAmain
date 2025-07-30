@@ -191,3 +191,11 @@ using namespace std;
 //         reverse(nums.begin() + k, nums.end());         // Reverse remaining elements
 //     }
 // };
+
+
+//left rotate array by k places
+
+void LeftRotArr(int arr[], int k, int n){
+    
+
+}
