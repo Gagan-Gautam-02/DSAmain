@@ -200,32 +200,34 @@ using namespace std;
 
 // move zeeros to the end of the array
 
-void MoveZ(int arr[],int temp[],int n){
-    int j = 0;
-    for(int i = 0;i < n; i++){
-        if(arr[i]!=0){
-            temp[j++] = arr[i];
+// void MoveZ(int arr[],int temp[],int n){
+//     // Create a temporary array to hold non-zero elements
+//     int j = 0;
+//     for(int i = 0;i < n; i++){
+//         if(arr[i]!=0){
+//             temp[j++] = arr[i];
 
-        }
-    }
-    // Fill the rest of the temp array with zeros
-    while(j<n){
-        temp[j++]=0;
-    }
-    for(int i = 0;i<n; i++){
-        arr[i] = temp[i];
-    }
-}
-int main(){
-    int arr[] = {0, 1, 0, 3, 12,2,5,0,5,3,0,0};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    int temp[n]; 
-    MoveZ(arr, temp, n);
-    cout << "Array after moving zeros to the end: ";
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
+//         }
+//     }
+//     // Fill the rest of the temp array with zeros
+//     while(j<n){
+//         temp[j++]=0;
+//     }
+//     // Copy the temp array back to the original array
+//     for(int i = 0;i<n; i++){
+//         arr[i] = temp[i];
+//     }
+// }
+// int main(){
+//     int arr[] = {0, 1, 0, 3, 12,2,5,0,5,3,0,0};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     int temp[n]; 
+//     MoveZ(arr, temp, n);
+//     cout << "Array after moving zeros to the end: ";
+//     for(int i=0;i<n;i++){
+//         cout<<arr[i]<<" ";
 
-    }
-    return 0;
-}
+//     }
+//     return 0;
+// }
 
