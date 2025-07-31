@@ -201,17 +201,16 @@ using namespace std;
 // move zeeros to the end of the array
 
 void MoveZ(int arr[],int temp[],int n){
-    
+    int j = 0;
     for(int i = 0;i < n; i++){
         if(arr[i]!=0){
-            temp[i] = arr[i];
+            temp[j++] = arr[i];
 
         }
     }
-    for(int i = 0;i<n; i++){
-        if(arr[i]==0){
-            temp[i]=0;
-        }
+    // Fill the rest of the temp array with zeros
+    while(j<n){
+        temp[j++]=0;
     }
     for(int i = 0;i<n; i++){
         arr[i] = temp[i];
