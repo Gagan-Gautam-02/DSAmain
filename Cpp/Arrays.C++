@@ -197,3 +197,36 @@ using namespace std;
 
 // void LeftRotArr(int arr[], int k, int n){
 // }
+
+// move zeeros to the end of the array
+
+void MoveZ(int arr[],int temp[],int n){
+    
+    for(int i = 0;i < n; i++){
+        if(arr[i]!=0){
+            temp[i] = arr[i];
+
+        }
+    }
+    for(int i = 0;i<n; i++){
+        if(arr[i]==0){
+            temp[i]=0;
+        }
+    }
+    for(int i = 0;i<n; i++){
+        arr[i] = temp[i];
+    }
+}
+int main(){
+    int arr[] = {0, 1, 0, 3, 12,2,5,0,5,3,0,0};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int temp[n]; 
+    MoveZ(arr, temp, n);
+    cout << "Array after moving zeros to the end: ";
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+
+    }
+    return 0;
+}
+
