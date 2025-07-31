@@ -231,3 +231,23 @@ using namespace std;
 //     return 0;
 // }
 
+//linear search in an array
+
+void LinSearch(int arr[],int n, int key){
+    for(int i=0; i<n; i++){
+        if(arr[i]==key){
+            cout << "Element found at index: " << i << endl;
+        }
+    }return;
+}
+
+int main(){
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr)/sizeof(arr[0]); 
+    int key;
+    cout << "Enter the element to search: ";
+    cin >> key;
+    LinSearch(arr, n, key);
+    cout << "Element not found in the array." << endl;
+    return 0;
+}
