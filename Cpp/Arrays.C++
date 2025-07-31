@@ -195,7 +195,5 @@ using namespace std;
 
 //left rotate array by k places
 
-void LeftRotArr(int arr[], int k, int n){
-    
-
-}
+// void LeftRotArr(int arr[], int k, int n){
+// }
